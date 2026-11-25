@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f7f8fc;
+    color: #252542;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+}
+
+.logo {
+    color: #635bdb;
+    font-size: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 12px;
+}
+
+button {
+    background: #635bdb;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4940bb;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(120deg, #e9e8ff, #f5f3ff);
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero span {
+    color: #635bdb;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+.container {
+    padding: 55px 8%;
+}
+
+.container h2 {
+    margin-bottom: 25px;
+}
+
+.categories, .jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.categories div, .job-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.categories div {
+    text-align: center;
+    cursor: pointer;
+}
+
+.categories div:hover {
+    transform: translateY(-5px);
+}
+
+.categories h3 {
+    margin-top: 12px;
+}
+
+.job-card h3 {
+    margin: 12px 0;
+}
+
+.job-card p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.job-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.save {
+    background: #eeeefe;
+    color: #635bdb;
+}
+
+.apply {
+    flex: 1;
+}
+
+footer {
+    background: #252542;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+@media(max-width: 650px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+}

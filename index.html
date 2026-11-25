@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobNest - Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2 class="logo">JobNest.</h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#jobs">Find Jobs</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <button onclick="showLogin()">Login</button>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Find Your <span>Dream Job</span></h1>
+
+        <p>
+            Discover opportunities and build your future
+            with JobNest.
+        </p>
+
+        <div class="search-box">
+            <input type="text" id="keyword"
+            placeholder="Job title or keyword">
+
+            <input type="text" id="location"
+            placeholder="Enter location">
+
+            <button onclick="searchJobs()">Search</button>
+        </div>
+    </section>
+
+    <section class="container" id="categories">
+        <h2>Explore Categories</h2>
+
+        <div class="categories">
+            <div onclick="filterCategory('IT')">💻<h3>IT Jobs</h3></div>
+            <div onclick="filterCategory('Design')">🎨<h3>Design</h3></div>
+            <div onclick="filterCategory('Marketing')">📊<h3>Marketing</h3></div>
+            <div onclick="filterCategory('Finance')">💰<h3>Finance</h3></div>
+        </div>
+    </section>
+
+    <section class="container" id="jobs">
+        <h2>Featured Jobs</h2>
+        <div class="jobs" id="jobList"></div>
+    </section>
+
+    <section class="container">
+        <h2>Saved Jobs ❤️</h2>
+        <div class="jobs" id="savedList"></div>
+    </section>
+
+    <footer id="contact">
+        <h2>JobNest.</h2>
+        <p>Connecting Talent With Opportunity.</p>
+        <p>© 2026 JobNest. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
